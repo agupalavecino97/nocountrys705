@@ -54,9 +54,9 @@ async function createMeeting({
     meet_number,
   });
 
-  if (existingMeeting) {
-    throw new Error("Esta reunión ya fue registrada");
-  }
+  // if (existingMeeting) {
+  //   throw new Error("Esta reunión ya fue registrada");
+  // }
 
   // Guardamos en la base de datos la información
   const meeting = await models.Meeting.create({
